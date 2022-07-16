@@ -19,7 +19,7 @@
 <h1 align="center">Below you will find direct links to each coding file, some files will have very basic code, others will have more advanced code.</h1>
 
 <ul>
-  <li><a href="https://github.com/M-HarrisJr/C-Plus-Plus-File/blob/main/Basic%20Sales%20Tax"><b>Basic Sales Tax Code</b></a><br/><i>This code shows basic math & is a very beginner code.</i></li>
+  <li><a href="https://github.com/M-HarrisJr/LUA-File/blob/main/Bank%20Robbery%20Script"><b>Bank Robbery Script</b></a><br/><i>This code shows array usage and input validation to ensure this product works perfectly for the game.</i></li>
   
   <li><a href="https://github.com/M-HarrisJr/C-Plus-Plus-File/blob/main/Hexadecimal%20to%20Binary%20%26%20Decimal%20to%20IEEE"><b>More Advanced Converter</b></a><br/>   <i>This code shows more advanced math & is a converter of both hexadecimal to binary code & decimal to IEEE.</i></li>
   
