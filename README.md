@@ -23,7 +23,7 @@
   
   <li><a href="https://github.com/M-HarrisJr/LUA-File/blob/main/Menu%20Controller%20With%20Input%20Validation"><b>Menu Controller With Input Validation</b></a><br/>   <i>This code shows the back end development for a Graphical User Interface that allows the player to change teams during gameplay.</i></li>
   
-  <li><a href="https://github.com/M-HarrisJr/C-Plus-Plus-File/blob/main/List%20Code%20Using%20Nodes"><b>Lists/Nodes Coding Practice</b></a><br/><i>This code shows the uses of lists/nodes in C++.</i></li>
+  <li><a href="https://github.com/M-HarrisJr/LUA-File/blob/main/Background%20Blur%20Code"><b>Background Blur Controlling Code</b></a><br/><i>This code shows the background development for a simple blur added behind a menu screen.</i></li>
   
   <li><a href="https://github.com/M-HarrisJr/C-Plus-Plus-File/blob/main/Vending%20Machine%20Code"><b>Vending Machine Simple Coding Practice</b></a><br/><i>This code shows the uses of basic arrays/choices.</i></li>
 </ul>
