@@ -1,0 +1,57 @@
+-- Michael Harris
+
+-- The purpose of this code is to get the player model when the player stands in a certain area of the bank and make sure this character gets the correct amount of cash
+
+-- Declarations
+local debounce = false
+local playerfound = false
+
+-- This function/module creates the region above the piece that the players stand.
+function CreateRegion3FromPart(Part)
+    return Region3.new(Part.Position-(Part.Size/2),Part.Position+(Part.Size/2))
+end
+
+-- This function/module gets all the players in the region and makes sure they get accounted for when money is distributed.
+function GetPlayersInPart(part)
+	local region = CreateRegion3FromPart(part)
+	local partsInRegion = workspace:FindPartsInRegion3(region,nil,math.huge)
+	local Players = {}
+	
+	for i,Part in pairs(partsInRegion) do
+		local player = game.Players:GetPlayerFromCharacter(Part.Parent)
+		if player then
+			
+			-- This is input validation for different types of players in the game. This code makes it so the police officers cannot rob the bank.
+			for i, v in pairs(Players) do
+				if Players[i].Name == player.Name and (player.TeamColor == BrickColor.new("Really red") or player.TeamColor == BrickColor.new("Really black")) then
+					playerfound = true
+				end
+			end	
+			
+			if playerfound == false and (player.TeamColor == BrickColor.new("Really red") or player.TeamColor == BrickColor.new("Really black")) then
+				table.insert(Players,player)
+			end
+			playerfound = false
+		end
+	end
+	
+	-- This loop gets every player from the designated region and gives them their cash value as long as they stay in the region
+	for i, v in pairs(Players) do
+		if Players[i].Robbing.Value == false then
+			game.ReplicatedStorage.ShowRobberyGUI1:FireClient(Players[i])
+		end
+		Players[i].Robbing.Value = true
+		-- The amount of cash caps off at 7000 and the loop is ended for that specific player once they reach that value.
+		if Players[i].CashCollected.Value < 7000 then
+			Players[i].CashCollected.Value = Players[i].CashCollected.Value + 250
+			Players[i].hiddenStats.playerBounty.Value = Players[i].hiddenStats.playerBounty.Value + 10
+		end
+
+	end
+	return Players
+end
+
+-- This loop runs the code and delays the money grab
+while wait(0.5) do
+	GetPlayersInPart(game.Workspace.bankHeist2.Detector)
+end
