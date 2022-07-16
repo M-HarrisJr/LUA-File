@@ -1,6 +1,6 @@
 -- Michael Harris
 
--- The purpose of this code is to control a menu pop up when a player wants to play for a different team in game. This code involves input validation and front-end development.
+-- The purpose of this code is to allow players to purchase vehicles in game and allows for the player to own the vehicle.
 
 -- Declarations
 local ShopCars = game.ServerStorage:WaitForChild("ShopCars")
