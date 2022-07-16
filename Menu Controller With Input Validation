@@ -1,0 +1,36 @@
+-- Michael Harris
+
+-- The purpose of this code is to control a menu pop up when a player wants to play for a different team in game. This code involves input validation and front-end development.
+
+-- Declarations
+local player = game.Players.LocalPlayer
+local ownsGamepass = game:GetService("MarketplaceService"):UserOwnsGamePassAsync(player.UserId, 16191129)
+local prompt = game:GetService("MarketplaceService")
+local remoteEvent = game.ReplicatedStorage.changeTeam
+local menuButton = script.Parent:WaitForChild("menuButton")
+local frame = script.Parent:WaitForChild("Frame")
+local policeColor = "Deep blue"
+local criminalColor = "Deep orange"
+local mafiaColor = "Really black"
+
+-- The codes below control the menu that allows for the changing of teams.
+frame.Robbers.MouseButton1Click:Connect(function()
+	remoteEvent:FireServer(BrickColor.new(criminalColor))
+end)
+frame.Cops.MouseButton1Click:Connect(function()
+	remoteEvent:FireServer(BrickColor.new(policeColor))
+end)
+-- This piece of code controls the menu as well but involves input validation for paid content that comes with the game
+frame.Mafia.MouseButton1Click:Connect(function()
+	if ownsGamepass then
+		remoteEvent:FireServer(BrickColor.new(mafiaColor))
+	else
+		prompt:PromptGamePassPurchase(player, 17580610)
+		print("This player doesn't own the in game content") -- Currently a placeholder for a display message to the player that will let them know they need the paid content.
+	end
+end)
+
+-- This makes the menu open & close
+menuButton.MouseButton1Click:Connect(function()
+	frame.Visible = not frame.Visible
+end)
