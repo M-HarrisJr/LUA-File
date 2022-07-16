@@ -25,5 +25,5 @@
   
   <li><a href="https://github.com/M-HarrisJr/LUA-File/blob/main/Background%20Blur%20Code"><b>Background Blur Controlling Code</b></a><br/><i>This code shows the background development for a simple blur added behind a menu screen.</i></li>
   
-  <li><a href="https://github.com/M-HarrisJr/C-Plus-Plus-File/blob/main/Vending%20Machine%20Code"><b>Vending Machine Simple Coding Practice</b></a><br/><i>This code shows the uses of basic arrays/choices.</i></li>
+  <li><a href="https://github.com/M-HarrisJr/LUA-File/blob/main/Dealership%20Script%20For%20Vehicle%20Purchasing"><b>Dealership Script For Vehicle Purchasing</b></a><br/><i>This code shows the back-end development of the dealership menu that allows players of the game to purchase and own vehicles in-game. This script is prepared for every exception and validates every user input.</i></li>
 </ul>
