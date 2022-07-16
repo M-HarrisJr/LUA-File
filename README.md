@@ -21,7 +21,7 @@
 <ul>
   <li><a href="https://github.com/M-HarrisJr/LUA-File/blob/main/Bank%20Robbery%20Script"><b>Bank Robbery Script</b></a><br/><i>This code shows array usage and input validation to ensure this product works perfectly for the game.</i></li>
   
-  <li><a href="https://github.com/M-HarrisJr/C-Plus-Plus-File/blob/main/Hexadecimal%20to%20Binary%20%26%20Decimal%20to%20IEEE"><b>More Advanced Converter</b></a><br/>   <i>This code shows more advanced math & is a converter of both hexadecimal to binary code & decimal to IEEE.</i></li>
+  <li><a href="https://github.com/M-HarrisJr/LUA-File/blob/main/Menu%20Controller%20With%20Input%20Validation"><b>Menu Controller With Input Validation</b></a><br/>   <i>This code shows the back end development for a Graphical User Interface that allows the player to change teams during gameplay.</i></li>
   
   <li><a href="https://github.com/M-HarrisJr/C-Plus-Plus-File/blob/main/List%20Code%20Using%20Nodes"><b>Lists/Nodes Coding Practice</b></a><br/><i>This code shows the uses of lists/nodes in C++.</i></li>
   
