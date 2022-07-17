@@ -27,3 +27,9 @@
   
   <li><a href="https://github.com/M-HarrisJr/LUA-File/blob/main/Dealership%20Script%20For%20Vehicle%20Purchasing"><b>Dealership Script For Vehicle Purchasing</b></a><br/><i>This code shows the back-end development of the dealership menu that allows players of the game to purchase and own vehicles in-game. This script is prepared for every exception and validates every user input.</i></li>
 </ul>
+
+<h2 align="center">My current LUA projects</h2>
+
+<ul>
+<li><a href="https://www.roblox.com/games/6577907877/Rome-City-Version-1-3"><b>Rome City, Version 1.3</b></a><br/><i>This game houses majority of the code showcased in this repository and is a complete solo project started from scratch.</i></li>
+</ul>
